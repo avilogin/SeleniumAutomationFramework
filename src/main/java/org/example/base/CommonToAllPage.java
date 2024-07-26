@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import static org.example.driver.DriverManager.getDriver;
-//import static com.thetestingacademy.driver.DriverManagerTL.getDriver;
+//import static org.example.driver.DriverManagerTL.getDriver;
 
 public class CommonToAllPage {
 
