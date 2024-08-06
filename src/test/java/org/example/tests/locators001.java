@@ -3,12 +3,21 @@ package org.example.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class locators001 {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        //WebDriver driver = new FirefoxDriver();
+       //WebDriver driver = new InternetExplorerDriver();
+        //WebDriver driver = new EdgeDriver();
+       // WebDriver driver = new SafariDriver();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);//waits
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.findElement(By.id("inputUsername")).sendKeys("Avijeet");

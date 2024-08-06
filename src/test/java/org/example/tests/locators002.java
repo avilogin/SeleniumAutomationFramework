@@ -13,6 +13,7 @@ public class locators002 {
     public static void main(String[] args) throws InterruptedException {
         String name = "Avijeet";
         WebDriver driver=new ChromeDriver();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get("https://rahulshettyacademy.com/locatorspractice/");
         driver.findElement(By.xpath("//a[contains(text(),'Forgot')]")).click();//contains text method using xpath
@@ -27,6 +28,8 @@ public class locators002 {
         Assert.assertEquals(msg,"You are successfully logged in.");
         String text = driver.findElement(By.cssSelector("div h2")).getText();
         Assert.assertEquals(text,"Hello "+name+",");
+        driver.findElement(By.xpath("//button[text() = 'Log Out']")).click();//this is only applicable for xpath
+
 
 
 
