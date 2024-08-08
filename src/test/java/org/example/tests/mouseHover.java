@@ -11,8 +11,12 @@ public class mouseHover {
         driver.manage().window().maximize();
         driver.get("https://www.flipkart.com/");
         Actions a = new Actions(driver);
-        a.moveToElement(driver.findElement(By.xpath("//span[contains(text(),'Fashion')]"))).perform();
-        Thread.sleep(3000);
+       // a.moveToElement(driver.findElement(By.xpath("//span[contains(text(),'Fashion')]"))).perform();
+        //Thread.sleep(3000);
         a.moveToElement(driver.findElement(By.xpath("//span[contains(text(),'Login')]"))).perform();
+        Thread.sleep(3000);
+
+        driver.quit();
+
     }
 }
