@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/Documents for Study/Automation class/JavaPrograms/SelFramework">
+        <classes>
+            <class name="org.example.Sept16.parallelExecution">
+                <methods>
+                    <include name="openGoogle"/>
+                    <include name="openFacebook"/>
+                </methods>
+            </class>
+            <class name="org.example.tests.DynamicDropdown03">
+                <methods>
+                    <include name="autoSuggestiveDropDown"/>
+                    <include name="spiceJet01"/>
+                </methods>
+            </class>
+            <class name="org.example.tests.TestVWOLogin">
+                <methods>
+                    <include name="testLoginNegative"/>
+                </methods>
+            </class>
+            <class name="org.example.tests.TestVWOLoginPOM">
+                <methods>
+                    <include name="testLoginNegative"/>
+                </methods>
+            </class>
+            <class name="org.example.tests.TestVWOLoginPOMBaseTest">
+                <methods>
+                    <include name="testLoginPositive"/>
+                </methods>
+            </class>
+            <class name="org.example.tests.flipKart">
+                <methods>
+                    <include name="locators"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

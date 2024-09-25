@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import java.util.List;
 
 public class StaticDropdown {
     public static void main(String[] args) throws InterruptedException{
@@ -14,6 +15,9 @@ public class StaticDropdown {
         WebElement currency  = driver.findElement(By.name("ctl00$mainContent$DropDownListCurrency"));
 
         Select sel = new Select(currency);
+        List<WebElement> el = sel.getOptions();
+        int options = el.size();
+        System.out.println("Number of options are "+options);
         sel.selectByIndex(2);
         Thread.sleep(2000);
         System.out.println(sel.getFirstSelectedOption().getText());

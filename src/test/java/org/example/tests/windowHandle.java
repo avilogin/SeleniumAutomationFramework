@@ -11,8 +11,9 @@ public class windowHandle {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/windows");
+        driver.manage().window().maximize();
         String mainWindowHandle = driver.getWindowHandle();
-        System.out.println(mainWindowHandle);
+        System.out.println("Main Window - "+mainWindowHandle);
         WebElement link = driver.findElement(By.linkText("Click Here"));
 
         // Click the link to open a new window
