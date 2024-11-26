@@ -14,19 +14,16 @@ public class parallelExecution {
         // Set up WebDriver (ChromeDriver in this case)
         driver = new ChromeDriver();
     }
-
     @Test
     public void openGoogle() {
         driver.get("https://www.google.com");
         System.out.println("Google Test is running on: " + Thread.currentThread().getId());
     }
-
     @Test
     public void openFacebook() {
         driver.get("https://www.facebook.com");
         System.out.println("Facebook Test is running on: " + Thread.currentThread().getId());
     }
-
     @AfterClass
     public void tearDown() {
         if (driver != null) {

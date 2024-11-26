@@ -10,8 +10,7 @@ import org.testng.Assert;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-public class WindowHandle {
-    static WebDriver driver;
+public class WindowHandle { static WebDriver driver;
     public static void main(String[] args) throws InterruptedException {
         driver = new ChromeDriver();
         String URL = "https://the-internet.herokuapp.com/windows";
@@ -31,14 +30,12 @@ public class WindowHandle {
                 System.out.println("Switched to another window");
                 break;
             }
-
         }
         Thread.sleep(3000);
         driver.switchTo().window(mainWin);
        String url_copy =  driver.getCurrentUrl();
         Assert.assertEquals(URL,url_copy);
         System.out.println("Switched To main window");
-
         Thread.sleep(3000);
         driver.quit();
 
