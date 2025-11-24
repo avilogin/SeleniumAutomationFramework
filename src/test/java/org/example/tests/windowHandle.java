@@ -31,7 +31,6 @@ public class windowHandle {
                 System.out.println("The text 'New Window' was found in the new window.");
                 break;
             }
-
         }
         driver.switchTo().window(mainWindowHandle);
 

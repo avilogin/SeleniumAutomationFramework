@@ -1,0 +1,1 @@
+{"uuid":"b6d30e1f-7954-48da-906a-7b25b3a323da","name":"SelFramework","children":["76fb4210-12c3-4e38-8c9e-78a1f0185cf9"],"befores":[{"name":"init_Browser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1763831318668,"stop":1763831328111}],"afters":[],"start":1763831318624,"stop":1763831337540}
